@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let x = 4;
+    let i
+
+    function tryRemoveFromArray(arr, x) {
+        let arr2 = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === x) {
+                continue;
+            }
+            arr2.push(arr[i]);
+        }
+        return arr2;
+    }
+
+    if (arr[i] !== x) {
+        document.write(arr)
+    }
+    document.write(tryRemoveFromArray(arr, x));
+</script>
+</body>
+</html>
